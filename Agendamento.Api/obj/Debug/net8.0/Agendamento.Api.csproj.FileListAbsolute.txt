@@ -115,3 +115,4 @@
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/bin/Debug/net8.0/Agendamento.Domain.pdb
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/bin/Debug/net8.0/Agendamento.Application.dll
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/bin/Debug/net8.0/Agendamento.Application.pdb
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/obj/Debug/net8.0/Agendamento.Api.sourcelink.json

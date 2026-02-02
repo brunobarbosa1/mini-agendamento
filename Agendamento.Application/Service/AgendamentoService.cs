@@ -108,6 +108,7 @@ public class AgendamentoService : IAgendamentoService
     // Controle de fluxo na criação de um agendamento sem conflito
     private static bool ExisteConflito(TimeOnly novoInicio, TimeOnly novoFim, IEnumerable<AgendamentoEntity> existentes)
     {
-        return existentes.Any(a => novoInicio < a.HoraFim && novoFim < a.HoraInicio);
+        return existentes
+            .Any(a => novoInicio < a.HoraFim && novoFim > a.HoraInicio);
     }
 }

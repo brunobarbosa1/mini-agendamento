@@ -12,3 +12,4 @@
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.pdb
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.genruntimeconfig.cache
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/ref/Agendamento.Domain.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.sourcelink.json

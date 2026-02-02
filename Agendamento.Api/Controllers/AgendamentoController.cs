@@ -39,7 +39,7 @@ public class AgendamentoController : ControllerBase
     }
 
     
-    [HttpPut("conluir/{id}")]
+    [HttpPut("concluir/{id}")]
     public async Task<ActionResult<AgendamentoResponseDto>> ConcluirAsync(int id)
     {
         try
@@ -90,7 +90,7 @@ public class AgendamentoController : ControllerBase
         try
         {
             await  _agendamentoService.DeletarAsync(id);
-            return Ok();
+            return NoContent();
         }
         catch (Exception e)
         {

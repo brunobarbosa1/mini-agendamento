@@ -26,6 +26,4 @@ public class AgendamentoMapper
             entity.AtualizadoEm,
             entity.Status);
     }
-
-    
 }

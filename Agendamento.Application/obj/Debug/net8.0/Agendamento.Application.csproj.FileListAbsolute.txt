@@ -17,3 +17,4 @@
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/obj/Debug/net8.0/Agendamento.Application.pdb
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/obj/Debug/net8.0/Agendamento.Application.genruntimeconfig.cache
 /Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/obj/Debug/net8.0/ref/Agendamento.Application.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/obj/Debug/net8.0/Agendamento.Application.sourcelink.json
