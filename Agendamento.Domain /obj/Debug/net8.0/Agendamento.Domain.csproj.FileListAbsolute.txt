@@ -1,0 +1,14 @@
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /bin/Debug/net8.0/Agendamento.Domain.deps.json
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /bin/Debug/net8.0/Agendamento.Domain.runtimeconfig.json
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /bin/Debug/net8.0/Agendamento.Domain.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /bin/Debug/net8.0/Agendamento.Domain.pdb
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.csproj.AssemblyReference.cache
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.AssemblyInfoInputs.cache
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.AssemblyInfo.cs
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.csproj.CoreCompileInputs.cache
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/refint/Agendamento.Domain.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.pdb
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/Agendamento.Domain.genruntimeconfig.cache
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/Debug/net8.0/ref/Agendamento.Domain.dll

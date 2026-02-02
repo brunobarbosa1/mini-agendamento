@@ -1,0 +1,17 @@
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/bin/Debug/net8.0/Agendamento.Data.deps.json
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/bin/Debug/net8.0/Agendamento.Data.runtimeconfig.json
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/bin/Debug/net8.0/Agendamento.Data.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/bin/Debug/net8.0/Agendamento.Data.pdb
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/bin/Debug/net8.0/Agendamento.Domain.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/bin/Debug/net8.0/Agendamento.Domain.pdb
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendamento.Data.csproj.AssemblyReference.cache
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendamento.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendamento.Data.AssemblyInfoInputs.cache
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendamento.Data.AssemblyInfo.cs
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendamento.Data.csproj.CoreCompileInputs.cache
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendame.9275120C.Up2Date
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendamento.Data.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/refint/Agendamento.Data.dll
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendamento.Data.pdb
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/Agendamento.Data.genruntimeconfig.cache
+/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/Debug/net8.0/ref/Agendamento.Data.dll
