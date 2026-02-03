@@ -82,8 +82,8 @@ public class AgendamentoController : ControllerBase
             return NotFound(e.Message);
         }
     }
-
-
+    
+    
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeletarAsync(int id)
     {
