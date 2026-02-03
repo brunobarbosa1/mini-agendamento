@@ -62,6 +62,12 @@ public class AgendamentoService : IAgendamentoService
         {
             throw new Exception("Agendamento não encontrado!");
         }
+
+        if (agendamento.Status == StatusAgendamento.CANCELADO)
+        {
+            throw new("Apenas Status como CRIADO podem ser concluido!");
+        }
+
         agendamento.Status = StatusAgendamento.CONCLUIDO;
         await _agendamentoRepository.SalvarAsync(agendamento);
         
@@ -77,9 +83,14 @@ public class AgendamentoService : IAgendamentoService
         {
             throw new Exception("Agendamento não encontrado!");
         }
+
+        if (agendamento.Status == StatusAgendamento.CONCLUIDO)
+        { 
+            throw new("Apenas Status como CRIADO podem ser cancelado!");
+        }
+        
         agendamento.Status = StatusAgendamento.CANCELADO;
         await _agendamentoRepository.SalvarAsync(agendamento);
-        
         return AgendamentoMapper.ToResponse(agendamento);
     }
     
@@ -117,6 +128,7 @@ public class AgendamentoService : IAgendamentoService
         agendamento.Data = request.Data;
         agendamento.HoraInicio = request.HoraInicio;
         agendamento.HoraFim = request.HoraFim;
+        agendamento.AtualizadoEm = DateTime.Now;
         
         await _agendamentoRepository.SalvarAsync(agendamento);
         return AgendamentoMapper.ToResponse(agendamento);
