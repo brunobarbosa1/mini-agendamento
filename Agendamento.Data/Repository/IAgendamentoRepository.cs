@@ -3,7 +3,7 @@ namespace Agendamento.Data.Repository;
 
 public interface IAgendamentoRepository
 {
-    Task<AgendamentoEntity> CriarAsync(AgendamentoEntity agendamento);
+    Task<AgendamentoEntity> AdicionarAsync(AgendamentoEntity agendamento);
     Task<AgendamentoEntity> SalvarAsync(AgendamentoEntity agendamento);
     Task<List<AgendamentoEntity>> ListarAsync();
     Task<AgendamentoEntity?> BuscarPorIdAsync(int id);

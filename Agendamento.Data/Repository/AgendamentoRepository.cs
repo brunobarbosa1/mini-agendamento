@@ -13,10 +13,9 @@ public class AgendamentoRepository : IAgendamentoRepository
         _context = context;
     }
     
-    public async Task<AgendamentoEntity> CriarAsync(AgendamentoEntity agendamento)
+    public async Task<AgendamentoEntity> AdicionarAsync(AgendamentoEntity agendamento)
     {
         await  _context.Agendamentos.AddAsync(agendamento);
-        await _context.SaveChangesAsync();
         return agendamento;
     }
 

@@ -11,4 +11,5 @@ public interface IAgendamentoService
     Task<List<AgendamentoResponseDto>> ListarAsync();
     Task<AgendamentoResponseDto?> BuscarPorIdAsync(int idAgendamento);
     Task DeletarAsync(int idAgendamento);
+    Task<AgendamentoResponseDto>  AtualizarAsync(int idAgendamento, AgendamentoRequestDto request);
 }

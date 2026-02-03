@@ -97,4 +97,18 @@ public class AgendamentoController : ControllerBase
             return NotFound(e.Message);
         }
     }
+
+    [HttpPut("atualizar/{id}")]
+    public async Task<ActionResult<AgendamentoResponseDto>> AtualizarAsync(int id, AgendamentoRequestDto request)
+    {
+        try
+        {
+            var agendamento = await _agendamentoService.AtualizarAsync(id, request);
+            return Ok(agendamento);
+        }
+        catch (Exception e)
+        {
+            return NotFound(e.Message);
+        }
+    }
 }

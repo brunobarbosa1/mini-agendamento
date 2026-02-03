@@ -47,9 +47,10 @@ public class AgendamentoService : IAgendamentoService
         agendamento.AtualizadoEm = DateTime.Now;
         agendamento.Status = StatusAgendamento.CRIADO;
         
-        var salvar = await _agendamentoRepository.CriarAsync(agendamento);
+        var agendamentoEntity = await _agendamentoRepository.AdicionarAsync(agendamento);
+        await _agendamentoRepository.SalvarAsync(agendamento);
         
-        return AgendamentoMapper.ToResponse(salvar);
+        return AgendamentoMapper.ToResponse(agendamentoEntity);
     }
 
     
@@ -59,12 +60,12 @@ public class AgendamentoService : IAgendamentoService
 
         if (agendamento == null)
         {
-            throw new Exception("Usuário não encontrado!");
+            throw new Exception("Agendamento não encontrado!");
         }
         agendamento.Status = StatusAgendamento.CONCLUIDO;
-        var salvar = await _agendamentoRepository.SalvarAsync(agendamento);
+        await _agendamentoRepository.SalvarAsync(agendamento);
         
-        return AgendamentoMapper.ToResponse(salvar);
+        return AgendamentoMapper.ToResponse(agendamento);
     }
 
     
@@ -74,12 +75,12 @@ public class AgendamentoService : IAgendamentoService
 
         if (agendamento == null)
         {
-            throw new Exception("Usuário não encontrado!");
+            throw new Exception("Agendamento não encontrado!");
         }
         agendamento.Status = StatusAgendamento.CANCELADO;
-        var salvar = await _agendamentoRepository.SalvarAsync(agendamento);
+        await _agendamentoRepository.SalvarAsync(agendamento);
         
-        return AgendamentoMapper.ToResponse(salvar);
+        return AgendamentoMapper.ToResponse(agendamento);
     }
     
     
@@ -88,23 +89,40 @@ public class AgendamentoService : IAgendamentoService
         var agendandamento  = await _agendamentoRepository.BuscarPorIdAsync(idAgendamento);
         if (agendandamento == null)
         {
-            throw new Exception("Usuário não encontrado!");
+            throw new Exception("Agendamento não encontrado!");
         }
         return AgendamentoMapper.ToResponse(agendandamento);
     }
+    
 
     public async Task DeletarAsync(int idAgendamento)
     {
         var agendamento = await _agendamentoRepository.BuscarPorIdAsync(idAgendamento);
         if (agendamento == null)
         {
-            throw new Exception("Usuário não encontrado!");
+            throw new Exception("Agendamento não encontrado para deletar!");
         }
         
         await _agendamentoRepository.DeletarAsync(agendamento);
     }
-    
-    
+
+    public async Task<AgendamentoResponseDto> AtualizarAsync(int idAgendamento, AgendamentoRequestDto request)
+    {
+        var agendamento  = await _agendamentoRepository.BuscarPorIdAsync(idAgendamento);
+        if (agendamento == null)
+        {
+            throw new Exception("Agendamento não encontrado!");
+        }
+        
+        agendamento.Data = request.Data;
+        agendamento.HoraInicio = request.HoraInicio;
+        agendamento.HoraFim = request.HoraFim;
+        
+        await _agendamentoRepository.SalvarAsync(agendamento);
+        return AgendamentoMapper.ToResponse(agendamento);
+    }
+
+
     // Controle de fluxo na criação de um agendamento sem conflito
     private static bool ExisteConflito(TimeOnly novoInicio, TimeOnly novoFim, IEnumerable<AgendamentoEntity> existentes)
     {
