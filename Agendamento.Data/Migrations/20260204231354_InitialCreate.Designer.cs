@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agendamento.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260131202621_InitialCreate")]
+    [Migration("20260204231354_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -21,32 +21,32 @@ namespace Agendamento.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.23")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Agendamento.Domain.Entities.Agendamento", b =>
+            modelBuilder.Entity("Agendamento.Domain.Entities.AgendamentoEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("AtualizadoEm")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("CriadoEm")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime2");
 
                     b.Property<DateOnly>("Data")
                         .HasColumnType("date");
 
                     b.Property<TimeOnly>("HoraFim")
-                        .HasColumnType("time(6)");
+                        .HasColumnType("time");
 
                     b.Property<TimeOnly>("HoraInicio")
-                        .HasColumnType("time(6)");
+                        .HasColumnType("time");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
