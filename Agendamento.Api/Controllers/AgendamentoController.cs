@@ -1,4 +1,5 @@
 using Agendamento.Api.Dto;
+using Agendamento.Application.Dto;
 using Agendamento.Application.Service;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,6 +18,7 @@ public class AgendamentoController : ControllerBase
 
     
     [HttpGet]
+    [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
     public async Task<ActionResult<List<AgendamentoResponseDto>>> ListarAsync()
     {
         var agendamentos = await _agendamentoService.ListarAsync();
@@ -25,21 +27,27 @@ public class AgendamentoController : ControllerBase
 
     
     [HttpPost]
+    [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
     public async Task<ActionResult<AgendamentoResponseDto>> CriarAsync(AgendamentoRequestDto request)
     {
         try
         {
             var agendamento = await _agendamentoService.CriarAsync(request);
-            return Created("api/agendamentos",  agendamento);
+            return CreatedAtAction("Listar", agendamento);
         }
         catch (Exception e)
         {
-            return BadRequest(e.Message);
+            return  Problem(
+                  e.Message,
+                  statusCode: StatusCodes.Status400BadRequest
+                  );
         }
     }
 
     
     [HttpPut("concluir/{id}")]
+    [ProducesResponseType(typeof(AgendamentoResponseDto),StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<AgendamentoResponseDto>> ConcluirAsync(int id)
     {
         try
@@ -49,12 +57,13 @@ public class AgendamentoController : ControllerBase
         }
         catch (Exception e)
         {
-            return NotFound(e.Message);
+            return BadRequest(e.Message);
         }
     }
     
     
     [HttpPut("cancelar/{id}")]
+    [ProducesResponseType(typeof(AgendamentoResponseDto),StatusCodes.Status200OK)]
     public async Task<ActionResult<AgendamentoResponseDto>> CancelarAsync(int id)
     {
         try
@@ -64,12 +73,14 @@ public class AgendamentoController : ControllerBase
         }
         catch (Exception e)
         {
-            return NotFound(e.Message);
+            return BadRequest(e.Message);
         }
     }
 
     
     [HttpGet("{id}")]
+    [ProducesResponseType(typeof(AgendamentoResponseDto),StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<AgendamentoResponseDto>> BuscarPorIdAsync(int id)
     {
         try
@@ -85,6 +96,8 @@ public class AgendamentoController : ControllerBase
     
     
     [HttpDelete("{id}")]
+    [ProducesResponseType(typeof(AgendamentoResponseDto),StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult> DeletarAsync(int id)
     {
         try
@@ -99,6 +112,8 @@ public class AgendamentoController : ControllerBase
     }
 
     [HttpPut("atualizar/{id}")]
+    [ProducesResponseType(typeof(AgendamentoResponseDto),StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<AgendamentoResponseDto>> AtualizarAsync(int id, AgendamentoRequestDto request)
     {
         try
@@ -108,7 +123,7 @@ public class AgendamentoController : ControllerBase
         }
         catch (Exception e)
         {
-            return NotFound(e.Message);
+            return BadRequest(e.Message);
         }
     }
 }

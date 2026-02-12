@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj": {}
+    "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj": {}
   },
   "projects": {
-    "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj": {
+    "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj",
+        "projectUniqueName": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj",
         "projectName": "Agendamento.Api",
-        "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj",
+        "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj",
         "packagesPath": "/Users/brunobarbosa/.nuget/packages/",
-        "outputPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/obj/",
+        "outputPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/brunobarbosa/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj": {
-                "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj"
+              "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj": {
+                "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj"
               },
-              "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj": {
-                "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj"
+              "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj": {
+                "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj"
               }
             }
           }
@@ -74,10 +74,6 @@
               "target": "Package",
               "version": "[8.0.23, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -106,14 +102,14 @@
         }
       }
     },
-    "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj": {
+    "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj",
+        "projectUniqueName": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj",
         "projectName": "Agendamento.Application",
-        "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj",
+        "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Application/Agendamento.Application.csproj",
         "packagesPath": "/Users/brunobarbosa/.nuget/packages/",
-        "outputPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Application/obj/",
+        "outputPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/brunobarbosa/.nuget/NuGet/NuGet.Config"
@@ -128,11 +124,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj": {
-                "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj"
+              "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj": {
+                "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj"
               },
-              "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj": {
-                "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj"
+              "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj": {
+                "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj"
               }
             }
           }
@@ -197,14 +193,14 @@
         }
       }
     },
-    "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj": {
+    "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj",
+        "projectUniqueName": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj",
         "projectName": "Agendamento.Data",
-        "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj",
+        "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Data/Agendamento.Data.csproj",
         "packagesPath": "/Users/brunobarbosa/.nuget/packages/",
-        "outputPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Data/obj/",
+        "outputPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/brunobarbosa/.nuget/NuGet/NuGet.Config"
@@ -219,8 +215,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj": {
-                "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj"
+              "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj": {
+                "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj"
               }
             }
           }
@@ -285,14 +281,14 @@
         }
       }
     },
-    "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj": {
+    "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj",
+        "projectUniqueName": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj",
         "projectName": "Agendamento.Domain",
-        "projectPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj",
+        "projectPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Domain /Agendamento.Domain.csproj",
         "packagesPath": "/Users/brunobarbosa/.nuget/packages/",
-        "outputPath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Domain /obj/",
+        "outputPath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Domain /obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/brunobarbosa/.nuget/NuGet/NuGet.Config"

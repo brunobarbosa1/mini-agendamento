@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+3BdKtWV/is=",
+  "dgSpecHash": "08y2DcMfY90=",
   "success": true,
-  "projectFilePath": "/Users/brunobarbosa/Documents/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj",
+  "projectFilePath": "/Users/brunobarbosa/Documents/dotnet-projects/Agendamento.Api/Agendamento.Api/Agendamento.Api.csproj",
   "expectedPackageFiles": [
     "/Users/brunobarbosa/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/brunobarbosa/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
